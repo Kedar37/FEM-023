@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Red Hat Display", serif;
+    font-size: 15px;
+    font-weight: 500;
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    height: 100vh;
+    display: flex;
+
+    @media (min-width: 800px) {
+        background-image: url(/images/pattern-background-desktop.svg);
+    }
+}
+
+h2, h3{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+img{
+    width: 100%;
+}
+
+.card{
+    max-width: 350px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    background-color: white;
+    align-self: center;
+    box-shadow: 0px 20px 20px 0px hsla(245, 75%, 52%, 0.144);
+
+    @media (min-width: 800px) {
+        max-width: 400px;
+    }
+ }
+
+.top-img{
+    border-radius: 1rem 1rem 0 0;
+}
+
+.order-summary{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+p{
+    color: hsl(224, 23%, 55%);  
+    line-height: 1.5;
+}
+
+.para{
+    width: 85%;
+    margin: 0 auto;
+}
+
+a{
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.annual-plan{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: hsla(225, 100%, 94%, 0.475);
+}
+
+.music-icon{
+    width: 15%;
+}
+
+.plan{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+h3{
+    font-size: 15px;
+}
+
+.plan-change-link{
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+    margin-left: auto;
+    font-size: 15px;
+}
+
+.plan-change-link:hover{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.proceed-link{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0px 10px 15px 0px hsla(245, 75%, 52%, 0.244);
+}
+
+.proceed-link:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+
+.cancel-order{
+    color: hsl(224, 23%, 55%);
+}
+
+.cancel-order:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+.proceed-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
